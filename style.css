@@ -1,0 +1,480 @@
+body {
+  background-color: #3f475e;
+  color: darkgray;
+}
+
+div.sideMenu {
+  background-color: #233247;
+  position: fixed;
+  height: 100%;
+  padding: 0;
+}
+
+div.sideMenu div.logo {
+  margin-left: 9%;
+  margin-top: 2%;
+}
+
+div.sideMenu div.nav {
+  width: 100%;
+  margin-top: 7%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 7%;
+}
+
+div.sideMenu div.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+div.sideMenu div.nav ul li {
+  height: 9%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+div.sideMenu div.nav ul li img {
+  height: 40%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+div.sideMenu div.nav ul li a {
+  height: 120%;
+  text-decoration: none;
+  margin-left: 10%;
+  padding-top: 10%;
+  color: #b6bfce;
+  font-size: 20px;
+  float: left;
+}
+
+div.sideMenu div.nav ul div.colorSection {
+  height: 90%;
+  width: 1%;
+  float: left;
+  background-color: #233247;
+  margin-right: 10%;
+  margin-bottom: 2%;
+}
+
+div.sideMenu div.nav ul div.colorSection.active {
+  height: 100%;
+  width: 1%;
+  float: left;
+  background-color: #4b8fe2;
+  margin-right: 10%;
+  margin-bottom: 2%;
+}
+
+div.sideMenu div.searchselect a {
+  margin: 5px;
+  text-decoration: none;
+}
+
+div.sideMenu div.searchselect .dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+div.sideMenu div.searchselect .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+div.sideMenu div.searchselect .dropdown-menu .sub-menu {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  margin-top: -1px;
+}
+
+div.sideMenu div.searchselect div.item {
+  color: #b6bfce;
+}
+
+div.sideMenu div.searchselect div.item h3 {
+  margin: 2%;
+  margin-left: 7%;
+}
+
+div.sideMenu div.searchselect div.item select {
+  margin-left: 7%;
+  margin-bottom: 7%;
+  padding: 2%;
+  padding-left: 9%;
+  padding-right: 8%;
+  width: 85%;
+  border-radius: 15px;
+  border: none;
+  background-color: #666f7e;
+  font-size: 20px;
+}
+
+div.sideMenu div.userType {
+  position: fixed;
+  bottom: 0px;
+  margin-left: 1%;
+  margin-bottom: 0.5%;
+  font-size: 20px;
+  color: #b6bfce;
+}
+
+div.content {
+  float: right;
+}
+
+div.Title {
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+div.Title h1 {
+  font-size: 45px;
+}
+
+div.Reach {
+  padding: 0;
+  margin-left: 1%;
+  border-radius: 15px;
+  Background-color: #233247;
+}
+
+div.Reach div.sectionHead {
+  align-items: center;
+  background-color: #1c2b40;
+  height: 7%;
+  margin: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: solid 4px #3f475e;
+  display: flex;
+  flex-direction: row;
+}
+
+div.Reach div.sectionHead h2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-left: 10%;
+  align-content: center;
+  color: #bfdc35;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+div.Reach div.Graph {
+  align-items: center;
+}
+
+div.Reach div.Graph div.img {
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+div.Reach div.Graph div.info {
+  margin-left: 35%;
+}
+
+div.Reach div.Graph div.info div.tag {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+div.Reach div.Graph div.info div.tag div.num {
+  text-align: right;
+}
+
+div.Frequency {
+  padding: 0;
+  margin-left: 0.5%;
+  border-radius: 15px;
+  Background-color: #233247;
+}
+
+div.Frequency div.sectionHead {
+  align-items: center;
+  background-color: #1c2b40;
+  height: 7%;
+  margin: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: solid 4px #3f475e;
+  display: flex;
+  flex-direction: row;
+}
+
+div.Frequency div.sectionHead h2 {
+  margin: 0;
+  margin-left: 7%;
+  align-content: center;
+  color: #ffc312;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+div.Frequency div.sectionHead h2 span {
+  margin-left: -5%;
+}
+
+div.Frequency div.Graph {
+  align-items: center;
+}
+
+div.Frequency div.Graph div.img {
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+div.Frequency div.Graph div.info {
+  margin-left: 35%;
+}
+
+div.Frequency div.Graph div.info div.tag {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+div.Frequency div.Graph div.info div.tag div.num {
+  text-align: right;
+}
+
+div.callSection div.CallsToTarget {
+  padding: 0;
+  height: 26.4%;
+  width: 125%;
+  margin-left: 0.5%;
+  border-radius: 15px;
+  Background-color: #233247;
+}
+
+div.callSection div.CallsToTarget div.sectionHead {
+  align-items: center;
+  background-color: #1c2b40;
+  height: 20%;
+  margin: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: solid 4px #3f475e;
+  display: flex;
+  flex-direction: row;
+}
+
+div.callSection div.CallsToTarget div.sectionHead h2 {
+  margin: 0;
+  margin-left: 7%;
+  padding-top: 1%;
+  align-content: center;
+  color: #6ebfd9;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+div.callSection div.CallsToTarget div.sectionHead h2 span {
+  margin-left: -5%;
+}
+
+div.callSection div.CallsToTarget div.Graph {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+div.callSection div.CallsPerDay {
+  padding: 0;
+  height: 26.4%;
+  width: 125%;
+  margin-left: 0.5%;
+  margin-top: 2%;
+  border-radius: 15px;
+  Background-color: #233247;
+}
+
+div.callSection div.CallsPerDay div.sectionHead {
+  align-items: center;
+  background-color: #1c2b40;
+  height: 20%;
+  margin: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: solid 4px #3f475e;
+  display: flex;
+  flex-direction: row;
+}
+
+div.callSection div.CallsPerDay div.sectionHead h2 {
+  margin: 0;
+  margin-left: 7%;
+  padding-top: 1%;
+  align-content: center;
+  color: #6ebfd9;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+div.callSection div.CallsPerDay div.sectionHead h2 span {
+  margin-left: -5%;
+}
+
+div.callSection div.CallsPerDay div.Graph {
+  display: block;
+  margin-left: 7%;
+  margin-top: 3%;
+}
+
+div.ActivityAlert {
+  background-color: #233247;
+  width: 48%;
+  margin-right: 0.5%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  font-size: 25px;
+}
+
+div.ActivityAlert h2 {
+  color: #a9b4c6;
+  font-size: 22px;
+  margin-bottom: 3%;
+}
+
+div.SalesAlert {
+  background-color: #233247;
+  margin-left: 0.5%;
+  width: 48%;
+  margin-bottom: 1%;
+  font-size: 25px;
+}
+
+div.SalesAlert h2 {
+  color: #a9b4c6;
+  font-size: 22px;
+  margin-bottom: 3%;
+}
+
+div.row div.productPerformance {
+  background-color: #233247;
+  margin-left: 2%;
+  margin-right: 3%;
+  margin-bottom: 1%;
+  margin-top: 4%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0;
+  padding-top: 3%;
+  height: 45%;
+}
+
+div.row div.productPerformance div.ProductSelect {
+  background-color: #3f4e65;
+  margin: 0;
+  margin-left: 1%;
+  padding: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  float: left;
+  border-radius: 15px;
+  height: 95%;
+  width: 15%;
+  font-size: 24px;
+}
+
+div.row div.productPerformance div.ProductSelect ul {
+  padding-top: 5%;
+  list-style-type: none;
+  margin-bottom: 2%;
+  color: #7f879c;
+  opacity: 0.8;
+}
+
+div.row div.productPerformance div.ProductSelect ul a {
+  text-decoration: none;
+  color: #7f879c;
+}
+
+div.row div.productPerformance div.table {
+  background-color: #233247;
+  width: 83%;
+  float: right;
+  border-collapse: collapse;
+  padding-top: -2%;
+  margin-top: -1.5%;
+  margin-left: -2%;
+}
+
+div.row div.productPerformance div.table tr:first-child {
+  color: #596781;
+  border-bottom: solid 1px #3f475e;
+}
+
+div.row div.productPerformance div.table tr {
+  border-bottom: solid 2px #3f475e;
+  font-size: 20px;
+}
+
+div.row div.productPerformance div.table th, div.row div.productPerformance div.table td {
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.row div.productPerformance div.table p {
+  margin-top: 17%;
+}
+
+.perform div.sectionHead {
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-bottom: 0;
+  margin-top: 1%;
+  padding: 0;
+  background-color: #1c2b40;
+}
+
+.perform div.sectionHead h2 {
+  background-color: #1c2b40;
+  border-bottom: solid 4px #3f475e;
+  font-size: 30px;
+  font-weight: bold;
+  height: 8.6%;
+  margin-top: 0;
+  border-top-left-radius: 15px;
+  color: #4b88d0;
+  padding-top: 1.5%;
+  padding-left: 3%;
+  align-content: center;
+}
+
+.perform div.sectionHead h2 span {
+  margin-left: -2%;
+}
+
+.perform div.sectionHead div.Options {
+  background-color: #233247;
+  margin: 0;
+  border-left: solid 4px #3f475e;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 8.6%;
+  width: 33.25%;
+}
+
+.perform div.sectionHead div.Options input {
+  margin-left: 6%;
+  margin-top: 7%;
+  background: #7f879c;
+  color: #7f879c;
+  opacity: 0.8;
+}
+
+.perform div.sectionHead div.Options label {
+  color: #7f879c;
+  font-size: 25px;
+}

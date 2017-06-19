@@ -1,0 +1,206 @@
+//output: main.html
+
+html 
+  head
+    title Responsive Dashboard Bootstrap
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href="./bootstrap-3.3.7-dist/css/bootstrap.css", rel="stylesheet")
+    link(href="./style.css", rel="stylesheet")
+    script(src="./jquery-3.2.1.js")
+    script(src="./bootstrap-3.3.7-dist/js/bootstrap.js")
+  body
+    div.container-fluid
+      div.row
+        div.sideMenu.col-sm-2
+          div.logo
+            img(src="southStateLogo.PNG")
+          div.nav
+            ul
+              li(style="background-color: #1c2b40")
+                div.colorSection.active
+                img(src="./homeSign.PNG")
+                a Home
+              li 
+                div.colorSection
+                img(src="./CalenderSign.PNG")
+                a Activity
+              li
+                div.colorSection
+                img(src="./GlobeSign.PNG")
+                a Geography
+              li
+                div.colorSection
+                img(src="./SaleSign.PNG")
+                a Sales
+              li
+                div.colorSection
+                img(src="AccountSign.PNG") 
+                a Account
+              li 
+                div.colorSection
+                img(src="PlanSign.PNG")
+                a Plan
+          div.searchselect
+            div.item
+              h3 Segment
+              select
+                option All
+                option Option
+                option Option 1
+            div.item
+              h3 Specialty 
+              select
+                option All
+                option Option
+                option Option 1
+          div.userType
+            p User: Demo
+        div.content.col-sm-10
+          div.Title
+            H1 Home - Providence, RI
+          div.row
+            div.Reach.col-sm-4
+              div.sectionHead
+                H2 
+                  span Reach
+              div.Graph
+                div.img
+                  img(src="./GraphReach.PNG")
+                div.info
+                  div.tag
+                    h3 Territory  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    div.num
+                      h3
+                        strong 76%
+                  div.tag
+                    h3 Region Avg &nbsp; 
+                    div.num
+                      h3
+                        strong 77% 
+            div.Frequency.col-sm-4
+              div.sectionHead
+                H2 
+                  span Frequency - Attainment
+              div.Graph
+                div.img
+                  img(src="./GraphFrequency.PNG")
+                div.info
+                  div.tag
+                    h3 Territory  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    div.num
+                      h3
+                        strong 39%
+                  div.tag
+                    h3 Region Avg &nbsp; 
+                    div.num
+                      h3
+                        strong 34% 
+            div.col-sm-3.callSection
+              div.CallsToTarget
+                div.sectionHead
+                  H2 
+                    span Percent Calls To Target
+                div.Graph
+                  div.img
+                    img(src="./GraphCallsToTarget.PNG")
+              div.CallsPerDay
+                div.sectionHead
+                  H2 
+                    span Average Calls Per Day
+                div.Graph
+                  div.img 
+                    img(src="./GraphCallsPerDay.PNG")
+          div.row.perform
+            div.sectionHead
+              H2.col-sm-8 
+                span Product Performance
+              div.Options.col-sm-2
+                input(type="radio" name="Total Rx" value="Total Rx" style="width:20px; height:20px; color: #7f879c;")
+                label Total Rx
+                input(type="radio" name="New Rx" value="New Rx" style="width:20px; height:20px; color: #7f879c;") 
+                label New Rx
+                input(type="radio" name="Not Refills" value="Not Refills" style="width:20px; height:20px; color: #7f879c;") 
+                label Not Refills
+            div.row
+              div.productPerformance
+                  div.ProductSelect.col-sm-1
+                    ul
+                      li 
+                        input(type="radio" name="All" value="All" style="width:20px; height:20px; background: #7f879c;")
+                        label All
+                      li 
+                        input(type="radio" name="Product1" value="Product1" style="width:20px; height:20px; color: #7f879c;")
+                        label Product 1
+                      li 
+                        input(type="radio" name="Product2" value="Product2" style="width:20px; height:20px; color: #7f879c;")
+                        label Product 2
+                      li 
+                        input(type="radio" name="Product3" value="Product3" style="width:20px; height:20px; color: #7f879c;")
+                        label Product 3
+                      li 
+                        input(type="radio" name="Product4" value="Product4" style="width:20px; height:20px; color: #7f879c;")
+                        label Product 4
+                      li 
+                        input(type="radio" name="Product5" value="Product5" style="width:20px; height:20px; color: #7f879c;")
+                        label Product 5
+                      li
+                        input(type="radio" name="Product6" value="Product6" style="width:20px; height:20px; color: #7f879c;")
+                        label Product 6
+                      li 
+                        input(type="radio" name="Product7" value="Product7" style="width:20px; height:20px; color: #7f879c;")
+                        label Product 7
+                  div.table.col-sm-11
+                    table(style="width:80%")
+                      tr
+                        th Geography
+                        th Last 12 months
+                        th Avg. Brand TRx
+                        th Avg. Brand TRx Chg
+                        th Avg. Market TRx
+                        th Avg. Market TRx Chg
+                        th Market Share Chg
+                      tr
+                        td Sales Team
+                        td 
+                          img(src="SalesGraph.PNG")
+                        td 180
+                        td 3.90%
+                        td 4,342
+                        td 0.08%
+                        td(style="display:flex;flex-direction:row")
+                          img(src="./UpSymbol.PNG")
+                          p(style="color: #00aa3b") 0.11%
+                      tr
+                        td Region
+                        td 
+                          img(src="RegionGraph.PNG")
+                        td 277
+                        td 4.59%
+                        td 4,861
+                        td 0.28%
+                        td(style="display:flex;flex-direction:row")  
+                          img(src="./DownSymbol.PNG") 
+                          p(style="color: #eb2540") 0.28%
+                      tr
+                        td Territory
+                        td 
+                          img(src="TerritoryGraph.PNG")
+                        td 276
+                        td -0.69%
+                        td 4,800
+                        td 4.54%
+                        td(style="display:flex;flex-direction:row")  
+                          img(src="./UpSymbol.PNG") 
+                          p(style="color: #00aa3b") 0.29%
+          div.row
+            div.ActivityAlert.col-sm-6
+              div.sectionHead
+                H2 Activity Alerts
+              div.info
+                p Easily create complex shapes with our state-of-the-art vector boolean operations and take advantage of our extensive layer styles.
+            div.SalesAlert.col-sm-6
+              div.sectionHead
+                H2 Sales Alerts
+              div.info
+                p Easily create complex shapes with our state-of-the-art vector boolean operations and take advantage of our extensive layer styles.
