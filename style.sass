@@ -1,3 +1,17 @@
+$break-small: 320px
+$break-Tablet: 1024px
+$break-desktop: 1224px
+$break-largeScreen: 1824px
+
+@mixin breakpoint($point)
+  @if $point == tv
+    @media (min-width: $break-largeScreen) { @content ; }
+  @else if $point == desktop
+    @media (min-width: $break-desktop) { @content ; }
+  @else if $point == tablet
+    @media (min-width: 768px) and (max-width: $break-Tablet) { @content ; }
+  @else if $point == mobileonly
+    @media (max-width: $break-small)  { @content ; }
 body
   background-color: #3f475e
   color: darkgray
@@ -13,7 +27,7 @@ div.sideMenu
     width: 100%
     margin-top: 7%
     margin-left: 0
-    margin-right: 0
+    margin-right: 2%
     margin-bottom: 7%
     ul
       list-style-type: none
@@ -177,7 +191,6 @@ div.Frequency
         div.num
           text-align: right
 div.callSection
-
   div.CallsToTarget
     padding: 0
     height: 26.4%
@@ -356,3 +369,29 @@ div.row
       label
         color: #7f879c
         font-size: 25px
+@include breakpoint(tablet)
+  .sideMenu
+    visibility: hidden
+    width: 0%
+  .content
+    width: 100%
+    .Reach
+      .Graph
+        margin-left: 0
+        .img
+          margin-left: 25%
+          width: 25%
+          height: 25%
+          img
+            width: 200%
+            height: 100%
+    .Frequency
+      .Graph
+        margin-left: 1%
+        .img
+          margin-left: 25%
+          width: 25%
+          height: 25%
+          img
+            width: 200%
+            height: 100%
